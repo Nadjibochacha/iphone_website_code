@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="bootsrap files/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="iphone.css">
+  </head>
+  <body id="body">
+    <!--navbar of website-->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark" >
+            <div class="container-fluid">
+              <a class="navbar-brand text-warning" href="#"><img src="icons/icons8-apple-logo-50.png" width="35px" height="35px" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> 
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-1 align-items-center  menu">
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Products
+                    </a>
+                    <ul class="dropdown-menu navbar-dark" style="background-color: black;">
+                      <li><a class="nav-link text-light " href="#">iphon 14 pro max</a></li>
+                      <li><a class="nav-link text-light " href="#">iphon 13 pro max</a></li>
+                      <li><a class="nav-link text-light " href="#">iphon 12 pro max</a></li>
+                      <li><a class="nav-link text-light " href="#">iphon 11 pro max</a></li>
+                      <li><a class="nav-link text-light " href="#">iphon 10 pro max</a></li>
+                      <li><a class="nav-link text-light " href="#">iphon 9 pro max</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="nav-link text-light" href="#">All iphon versions</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light me-1" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
+    <!-- the discraption of product-->
+    <center>
+        <div class="container mt-md-3 mt-2 ps-5 homebody w-75">
+            <div class="row">
+                <div class="col-lg-6 col-12 ">
+                    <h1>
+                        IPHON 13 PRO MAX
+                    </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ullam ipsum rerum quasi omnis veritatis voluptates necessitatibus, natus culpa eveniet facere obcaecati, maiores dignissimos veniam molestias ipsam eius repellat.
+                    </p>
+                    <a href="" class="btn btn-outline-light mb-3 ms-5"> All Products</a>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <img src="photos/iphonegld.png" alt="" id="p0" width="250px" height="300px">
+                </div>
+            </div>
+        </div>
+    </center>
+    
+
+    <!--the footer-->
+    <div class="icons mt-4">
+        <center>
+        <img src="photos/ihpne1.jpg" onclick="phones('photos/ihpne1.jpg','rgb(0, 0, 82)');" >
+        <img src="photos/iphone2.jpg" onclick="phones('photos/iphone2.jpg','rgb(255, 113, 137)');" >
+        <img src="photos/3207179.jpg" onclick="phones('photos/3207179.jpg','rgb(164, 112, 190)');" >
+        <img src="photos/3105004.jpg" onclick="phones('photos/3105004.jpg','rgb(51, 49, 71)');" ></center>
+    </div>
+
+
+
+    <script src="bootsrap files/bootstrap-5.3.0-alpha1-dist/js/popper.min2.js"></script>
+    <script src="bootsrap files/bootstrap-5.3.0-alpha1-dist/js/jquery-3.6.3.min.js"></script>
+    <script src="bootsrap files/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+    <script>
+      let pran_p =document.getElementById('p0');
+      let body =document.getElementById('body');
+      let btn =document.getElementsByClassName('.btn');
+      function phones( ph, ph1) {
+        pran_p.src = ph; 
+        body.style.backgroundColor=ph1;
+      }
+    </script>
+  </body>
+</html>

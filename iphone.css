@@ -1,0 +1,49 @@
+body{
+    background-color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+.menu{
+    position: relative;
+    left: 48%;
+}
+.homebody{
+    background-color: rgba(128, 128, 128, 0.344);
+    color: whitesmoke;
+    border-radius: 20px;
+    position: relative;
+}
+.homebody h1{
+    width: 52%;
+    text-align: center;
+    font-size: 60px;
+}
+.homebody p{
+  
+    text-align: center;
+    font-size: 22px;
+}
+.homebody img{
+    margin-top: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.icons img{
+    margin-right: 20px;
+    width: 50px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+.icons img:hover{
+   transform: scale(1.2);
+}
+.nav-link{
+    transition: all 0.5s ease-out;
+}
+ .nav-link:hover{
+    transform: scale(1.1);
+}
